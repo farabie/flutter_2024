@@ -3,6 +3,8 @@ import 'package:flutter_2024/ui/pages/container.dart';
 import 'package:flutter_2024/ui/pages/container_boxdecoration.dart';
 import 'package:flutter_2024/ui/pages/first_flutter.dart';
 import 'package:flutter_2024/ui/pages/row_column_flutter.dart';
+import 'package:flutter_2024/ui/pages/sized_box.dart';
+import 'package:flutter_2024/ui/pages/text_widget_tutorial.dart';
 
 void main() {
   runApp(const MyApp());
@@ -46,11 +48,18 @@ class HomePage extends StatelessWidget {
             const RowColumn(),
             context: context,
           ),
-           widgetMenu(
+          widgetMenu(
             "03. Container",
             "04. Container Box Decorations",
             const BelajarContainer(),
             const ContainerBoxDecoration(),
+            context: context,
+          ),
+          widgetMenu(
+            "05. Sized Box",
+            "06. Text Widget",
+            const SizedBoxTutorial(),
+            const TextWidgetTutorial(),
             context: context,
           ),
         ],
