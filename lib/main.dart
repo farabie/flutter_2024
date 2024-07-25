@@ -68,7 +68,7 @@ class HomePage extends StatelessWidget {
             "07. Mengubah Jenis Font",
             "08. Stateless & Stateful Widget",
             const JenisFont(),
-            const StatelessTutorial(),
+            const StateFullStalessTutorial(),
             context: context,
           ),
         ],
