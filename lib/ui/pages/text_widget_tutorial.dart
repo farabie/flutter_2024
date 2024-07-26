@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class TextWidgetTutorial extends StatelessWidget {
   const TextWidgetTutorial({super.key});

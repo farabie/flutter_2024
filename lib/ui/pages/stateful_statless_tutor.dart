@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 // class StatelessTutorial extends StatelessWidget {
@@ -32,7 +30,7 @@ class _StateFullStalessTutorialState extends State<StateFullStalessTutorial> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Statefull & Stateless Widget"),
+        title: const Text("Statefull & Stateless Widget"),
       ),
       body: Center(
         child: Column(

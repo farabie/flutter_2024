@@ -5,8 +5,10 @@ import 'package:flutter_2024/ui/pages/first_flutter.dart';
 import 'package:flutter_2024/ui/pages/jenis_font.dart';
 import 'package:flutter_2024/ui/pages/row_column_flutter.dart';
 import 'package:flutter_2024/ui/pages/sized_box.dart';
+import 'package:flutter_2024/ui/pages/stack_tutorial.dart';
 import 'package:flutter_2024/ui/pages/stateful_statless_tutor.dart';
 import 'package:flutter_2024/ui/pages/text_widget_tutorial.dart';
+import 'package:flutter_2024/ui/pages/wrap_tutorial.dart';
 
 void main() {
   runApp(const MyApp());
@@ -69,6 +71,13 @@ class HomePage extends StatelessWidget {
             "08. Stateless & Stateful Widget",
             const JenisFont(),
             const StateFullStalessTutorial(),
+            context: context,
+          ),
+           widgetMenu(
+            "09. Stack",
+            "10. Wrap",
+            const StackTutorial(),
+            const WrapTutorial(),
             context: context,
           ),
         ],
