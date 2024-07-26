@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class StackTutorial extends StatelessWidget {
   const StackTutorial({super.key});

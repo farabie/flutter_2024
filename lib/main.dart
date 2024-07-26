@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_2024/ui/pages/align_tutorial.dart';
 import 'package:flutter_2024/ui/pages/container.dart';
 import 'package:flutter_2024/ui/pages/container_boxdecoration.dart';
 import 'package:flutter_2024/ui/pages/first_flutter.dart';
 import 'package:flutter_2024/ui/pages/jenis_font.dart';
+import 'package:flutter_2024/ui/pages/padding_tutorial.dart';
 import 'package:flutter_2024/ui/pages/row_column_flutter.dart';
 import 'package:flutter_2024/ui/pages/sized_box.dart';
 import 'package:flutter_2024/ui/pages/stack_tutorial.dart';
@@ -78,6 +80,13 @@ class HomePage extends StatelessWidget {
             "10. Wrap",
             const StackTutorial(),
             const WrapTutorial(),
+            context: context,
+          ),
+           widgetMenu(
+            "10. Align",
+            "11. Padding",
+            const AlignTutorial(),
+            const PaddingTutorial(),
             context: context,
           ),
         ],
