@@ -15,7 +15,7 @@ class StackTutorial extends StatelessWidget {
         width: 300,
         height: 300,
         child: Stack(
-          alignment: Alignment.center,
+          alignment: Alignment.bottomRight,
           children: [
             Container(
               color: Colors.grey.withOpacity(0.3),
