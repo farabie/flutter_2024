@@ -3,6 +3,7 @@ import 'package:flutter_2024/ui/pages/align_tutorial.dart';
 import 'package:flutter_2024/ui/pages/container.dart';
 import 'package:flutter_2024/ui/pages/container_boxdecoration.dart';
 import 'package:flutter_2024/ui/pages/first_flutter.dart';
+import 'package:flutter_2024/ui/pages/icon_tutorial.dart';
 import 'package:flutter_2024/ui/pages/jenis_font.dart';
 import 'package:flutter_2024/ui/pages/padding_tutorial.dart';
 import 'package:flutter_2024/ui/pages/row_column_flutter.dart';
@@ -10,6 +11,7 @@ import 'package:flutter_2024/ui/pages/sized_box.dart';
 import 'package:flutter_2024/ui/pages/stack_tutorial.dart';
 import 'package:flutter_2024/ui/pages/stateful_statless_tutor.dart';
 import 'package:flutter_2024/ui/pages/text_widget_tutorial.dart';
+import 'package:flutter_2024/ui/pages/textfield_tutorial.dart';
 import 'package:flutter_2024/ui/pages/wrap_tutorial.dart';
 
 void main() {
@@ -75,18 +77,25 @@ class HomePage extends StatelessWidget {
             const StateFullStalessTutorial(),
             context: context,
           ),
-           widgetMenu(
+          widgetMenu(
             "09. Stack",
             "10. Wrap",
             const StackTutorial(),
             const WrapTutorial(),
             context: context,
           ),
-           widgetMenu(
-            "10. Align",
-            "11. Padding",
+          widgetMenu(
+            "11. Align",
+            "12. Padding",
             const AlignTutorial(),
             const PaddingTutorial(),
+            context: context,
+          ),
+          widgetMenu(
+            "13. Icon",
+            "14. TextField",
+            const IconTutorial(),
+            const TextfieldTutorial(),
             context: context,
           ),
         ],
