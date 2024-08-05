@@ -16,7 +16,7 @@ class _TextfieldTutorial3State extends State<TextfieldTutorial3> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.grey.shade300,
-        title: const Text("TextField Tutorial 2"),
+        title: const Text("TextField Tutorial 3"),
       ),
       body: Padding(
         padding: const EdgeInsets.all(20),
@@ -138,6 +138,50 @@ class _TextfieldTutorial3State extends State<TextfieldTutorial3> {
                 ),
                 fillColor: Colors.grey.shade300,
                 filled: true,
+                //UnderlineInputBorder Menampilkan Border Yang dibagian Bawah Saja
+                //OutlineInputBorder Menampilkan Semua Bagian Border
+                enabledBorder: OutlineInputBorder(
+                  borderSide: BorderSide(
+                    color: Colors.yellow.shade600,
+                    width: 2,
+                  ),
+                  borderRadius: BorderRadius.circular(10)
+                ),
+                disabledBorder: OutlineInputBorder(
+                  borderSide: BorderSide(
+                    color: Colors.blueGrey.shade300,
+                    width: 2,
+                  ),
+                  borderRadius: BorderRadius.circular(10)
+                ),
+                //Enabled False Untuk Sebagai readonly atau disabled inputan
+                // enabled: false,
+                focusedBorder: OutlineInputBorder(
+                  //Jarak Gap Untuk ketika diklik pada bagian input text pada label
+                  gapPadding: 20,
+                  borderSide: BorderSide(
+                    color: Colors.green.shade900,
+                    width: 2,
+                  ),
+                  borderRadius: BorderRadius.circular(10)
+                ),
+                errorBorder: OutlineInputBorder(
+                  //Jarak Gap Untuk ketika diklik pada bagian input text pada label
+                  borderSide: BorderSide(
+                    color: Colors.pink.shade100,
+                    width: 2,
+                  ),
+                  borderRadius: BorderRadius.circular(10)
+                ),
+                focusedErrorBorder: OutlineInputBorder(
+                  //Jarak Gap Untuk ketika diklik pada bagian input text pada label
+                  borderSide: BorderSide(
+                    color: Colors.pink.shade600,
+                    width: 2,
+                  ),
+                  gapPadding: 20,
+                  borderRadius: BorderRadius.circular(10)
+                ),
               ),
             ),
             const SizedBox(
