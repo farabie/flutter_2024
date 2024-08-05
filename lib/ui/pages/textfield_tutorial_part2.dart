@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-class TextfieldTutorial extends StatefulWidget {
-  const TextfieldTutorial({super.key});
+class TextfieldTutorial2 extends StatefulWidget {
+  const TextfieldTutorial2({super.key});
 
   @override
-  State<TextfieldTutorial> createState() => _TextfieldTutorialState();
+  State<TextfieldTutorial2> createState() => _TextfieldTutorial2State();
 }
 
-class _TextfieldTutorialState extends State<TextfieldTutorial> {
+class _TextfieldTutorial2State extends State<TextfieldTutorial2> {
   TextEditingController textEditingController = TextEditingController();
 
   @override
@@ -16,7 +16,7 @@ class _TextfieldTutorialState extends State<TextfieldTutorial> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.grey.shade300,
-        title: const Text("TextField Tutorial Part"),
+        title: const Text("TextField Tutorial 2"),
       ),
       body: Padding(
         padding: const EdgeInsets.all(20),
@@ -99,6 +99,45 @@ class _TextfieldTutorialState extends State<TextfieldTutorial> {
                     style: TextStyle(fontWeight: FontWeight.bold),
                   ),
                 ),
+                icon: Container(
+                  width: 20,
+                  height: 20,
+                  color: Colors.blue.shade900,
+                ),
+                prefixIcon: const Icon(Icons.person),
+                prefixIconColor: Colors.blue.shade900,
+                // prefixText: "Name: ",
+                // prefixStyle: TextStyle(
+                //   fontWeight: FontWeight.bold,
+                //   color: Colors.blue.shade900,
+                // ),
+                prefix: Container(
+                  padding: const EdgeInsets.all(5),
+                  color: Colors.red.shade900,
+                  child: const Text(
+                    'Name: ',
+                    style: TextStyle(color: Colors.yellow),
+                  ),
+                ),
+                suffixIcon: const Icon(Icons.coffee),
+                suffixIconColor: Colors.blue.shade900,
+                // suffixText: "SUFFIX",
+                // suffixStyle: TextStyle(
+                //   fontWeight: FontWeight.bold,
+                //   color: Colors.blue.shade900,
+                // ),
+                suffix: Container(
+                  padding: const EdgeInsets.all(5),
+                  color: Colors.red.shade900,
+                  child: const Text(
+                    "SUFFIX",
+                    style: TextStyle(
+                      color: Colors.yellow,
+                    ),
+                  ),
+                ),
+                fillColor: Colors.grey.shade300,
+                filled: true,
               ),
             ),
             const SizedBox(

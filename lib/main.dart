@@ -12,6 +12,7 @@ import 'package:flutter_2024/ui/pages/stack_tutorial.dart';
 import 'package:flutter_2024/ui/pages/stateful_statless_tutor.dart';
 import 'package:flutter_2024/ui/pages/text_widget_tutorial.dart';
 import 'package:flutter_2024/ui/pages/textfield_tutorial.dart';
+import 'package:flutter_2024/ui/pages/textfield_tutorial_part2.dart';
 import 'package:flutter_2024/ui/pages/wrap_tutorial.dart';
 
 void main() {
@@ -95,6 +96,13 @@ class HomePage extends StatelessWidget {
             "13. Icon",
             "14. TextField",
             const IconTutorial(),
+            const TextfieldTutorial(),
+            context: context,
+          ),
+           widgetMenu(
+            "15. Input Decoration Part 2",
+            "16. Input Decoration Part 3",
+            const TextfieldTutorial2(),
             const TextfieldTutorial(),
             context: context,
           ),
