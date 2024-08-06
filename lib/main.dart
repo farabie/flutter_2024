@@ -7,6 +7,7 @@ import 'package:flutter_2024/ui/pages/icon_tutorial.dart';
 import 'package:flutter_2024/ui/pages/jenis_font.dart';
 import 'package:flutter_2024/ui/pages/padding_tutorial.dart';
 import 'package:flutter_2024/ui/pages/row_column_flutter.dart';
+import 'package:flutter_2024/ui/pages/scroll_dan_page_view.dart';
 import 'package:flutter_2024/ui/pages/sized_box.dart';
 import 'package:flutter_2024/ui/pages/stack_tutorial.dart';
 import 'package:flutter_2024/ui/pages/stateful_statless_tutor.dart';
@@ -100,10 +101,17 @@ class HomePage extends StatelessWidget {
             const TextfieldTutorial(),
             context: context,
           ),
-           widgetMenu(
+          widgetMenu(
             "15. Input Decoration Part 2",
             "16. Input Decoration Part 3",
             const TextfieldTutorial2(),
+            const TextfieldTutorial3(),
+            context: context,
+          ),
+          widgetMenu(
+            "17. SingleChlild Scroll View Vs ListView",
+            "18. Page View",
+            const ScrollPageView(),
             const TextfieldTutorial3(),
             context: context,
           ),
